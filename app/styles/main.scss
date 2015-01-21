@@ -1,0 +1,77 @@
+// bower:scss
+// endbower
+
+body {
+  background: #fafafa;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #333;
+
+  div {
+    font-family:Shadows Into Light;
+    text-align: center;
+    font-size: 3em;
+    color: white;
+  }
+
+  #second-hand {
+    margin:0 auto;
+    width:0.5em;
+    height: 13em;
+    background-color:#6A63B0;
+    margin-top:2em;
+    transform-origin: 0 100% ;
+    position:relative;
+    z-index: 3;
+    border-radius:20px;
+  }
+  #minute-hand {
+    margin:0 auto;
+    width:1em;
+    height: 13em;
+    background-color:#C230B8;
+    margin-top:2em;
+    transform-origin: 0 100% ;
+    position:relative;
+    bottom:240px;
+    z-index: 2;
+    border-radius:20px;
+  }
+  #hour-hand {
+    margin:0 auto;
+    width:1.5em;
+    height: 13em;
+    background-color:#A38C22;
+    margin-top:2em;
+    transform-origin: 0 100% ;
+    position:relative;
+    bottom:480px;
+    z-index: 1;
+    border-radius:20px;
+  }
+
+}
+
+.hero-unit {
+  margin: 50px auto 0 auto;
+  width: 300px;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 30px;
+  background-color: #eee;
+  border-radius: 6px;
+  padding: 60px;
+  h1 {
+    font-size: 60px;
+    line-height: 1;
+    letter-spacing: -1px;
+  }
+}
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+
