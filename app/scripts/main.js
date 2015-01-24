@@ -74,5 +74,40 @@ setInterval(function() {
 
 }, 1000);
 
+var counter = 1;
+var counter2 = 1;
+
+
+
+	$( window ).keydown(function(event) {
+
+		console.log(event.which);
+
+
+		if (event.which === 37) {
+			counter+=5;
+			$('.moving-box').css('right', counter);			
+		} else if (event.which === 39) {
+			counter-=5;
+			$('.moving-box').css('right', counter);
+		} else if (event.which === 40) {
+			counter2+=5;
+			$('.moving-box').css('top', counter2);
+		} else if (event.which === 38) {
+			counter2-=5;
+			$('.moving-box').css('top', counter2);
+		}
+
+	});
+
+	$('.moving-box').drag(function(event) {
+
+		if (event.target == '.moving-box') {
+			$('.moving-box').css('left', screenX);			
+		} 
+
+	});
+
+
 
 });
